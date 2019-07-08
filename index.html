@@ -184,8 +184,8 @@ this.onmousemove = null;
 timer = setInterval(function(){
 minusX *= 0.95;
 minusY *= 0.95;
-roY += minusX * 0.15;
-roX -= minusY * 0.15;
+roY += minusX * 0.1;
+roX -= minusY * 0.1;
 oWrap.style.transform = 'rotateX(' + roX + 'deg) rotateY(' + roY +'deg)';
 if(Math.abs(minusX) < 0.1 || Math.abs(minusY) < 0.1){
 clearInterval(timer);
