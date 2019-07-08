@@ -199,8 +199,8 @@ function touchEnd(e){
 e.preventDefault();
 
 timer = setInterval(function(){
-minusX *= 0.9;
-minusY *= 0.9;
+minusX *= 0.5;
+minusY *= 0.5;
 roY += minusX * 0.1;
 roX -= minusY * 0.1;
 oWrap.style.transform = 'rotateX(' + roX + 'deg) rotateY(' + roY +'deg)';
