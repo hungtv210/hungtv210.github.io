@@ -71,36 +71,6 @@ height: 100%;
 line-height: 24px;
 background-color: #999;
 }
-.stars {
-position: absolute;
-top: 50%;
-left: 50%;
-width: 4px;
-height:4px;
--webkit-border-radius:50%;
--moz-border-radius:50%;
-border-radius:50%;
-animation: fly 3s linear infinite;
-transform-style: preserve-3d;
-
- 
-
-}
-.stars:before, .stars:after {
-content: "";
-position: absolute;
-width: inherit;
-height: inherit;
-box-shadow: inherit;
-}
-.stars:before {
-transform: translateZ(-100px);
-opacity: .6;
-}
-.stars:after {
-transform: translateZ(-600px);
-opacity: .4;
-}
 
 @keyframes fly {
 from {
